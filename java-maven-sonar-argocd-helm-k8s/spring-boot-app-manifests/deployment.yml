@@ -15,7 +15,8 @@ spec:
         app: spring-boot-app
     spec:
       containers:
-      - name: spring-boot-app
-        image: writetoritika/ultimate-cicd:6
+        - name: spring-boot-app
+          image: writetoritika/ultimate-cicd:6
         ports:
-        - containerPort: 8080
+          - name: http
+            containerPort: 8080
